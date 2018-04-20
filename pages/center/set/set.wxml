@@ -1,0 +1,27 @@
+<!--pages/center/consumption/consumption.wxml-->
+<view class="page">
+    <view class="page__bd">
+        <view class="psge__bd_bContain page__bd-border">
+            <navigator url="setpw/setpw" class="weui-flex page__bd_title" hover-class="bgcolor-none">
+                <view class="weui-flex__item text-left">
+                    修改密码
+                </view>
+                <view class="weui-flex__item text-right item-paddingtop">
+                    >
+                </view>
+            </navigator>
+            <button class="weui-flex page__bd_title bgcolor-none" open-type="share" hover-class="bgcolor-none">
+                <view class="weui-flex__item text-left">
+                    分享给好友
+                </view>
+                <view class="weui-flex__item text-right item-paddingtop">
+                    >
+                </view>
+            </button>
+        </view>
+
+        <view>
+            <button class="button btn-bgcolor">退出登陆</button>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,32 @@
+<!--pages/center/consumption/consumption.wxml-->
+<view class="page">
+    <view class="page__bd">
+        <view class="psge__bd_bContain page__bd-border">
+            <view class="weui-flex page__bd_title" hover-class="bgcolor-none">
+                <view class="text-left">
+                    一句话介绍：
+                </view>
+                <view class="weui-flex__item text-left">
+                    <input type="text" placeholder="请输入介绍" />
+                </view>
+                <view class="text-right item-paddingtop">
+                    <text class="icon-why">x</text>
+                </view>
+            </view>
+        </view>
+        <view class="psge__bd_bContain page__bd-border">
+            <view class="page__bd_title" hover-class="bgcolor-none">
+                <view class="section-contain">
+                    <view class="page__bd_intro fontsize-30">
+                        <block>项目概况：</block>
+                        <textarea maxlength="1000"></textarea>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view>
+            <button class="button btn-bgcolor">保存</button>
+        </view>
+    </view>
+</view>

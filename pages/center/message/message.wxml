@@ -1,0 +1,95 @@
+<!--pages/attention/attention.wxml-->
+<!--viewages/investment/investment.wxml-->
+<!--<text>viewages/investment/investment.wxml</text>-->
+<view class="page">
+    <!--<view class="page__pd">
+        <image src="../../assets/img/material/banner.jpg" />        
+    </view>-->
+    
+    <view class="page__bd">                
+        <view class="weui-tab">
+            <view class="weui-navbar">
+                <block wx:for="{{tabs}}" wx:key="*this">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                        <view class="weui-navbar__title">{{item}}</view>
+                    </view>
+                </block>
+                <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+            </view>
+            <view class="weui-tab__panel">
+                <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+                    <!--tab1-->
+                    <view class="psge__bd_bContain page__bd-border">
+                        <view class="weui-flex page__bd_title" hover-class="bgcolor-none">
+                            <view class="weui-flex__item text-left">
+                                <image src="../../../assets/img/icon/edit.png" mode="aspectFit" />
+                                09月29日 2:00:00
+                            </view>
+                            <view class="weui-flex__item text-right item-paddingtop">
+                                >
+                            </view>
+                        </view>
+                        <view class="page__bd_title">
+                            <view class="text-left">
+                                最新投资人邀约通知
+                            </view>
+                            <view class="text-left">
+                                暂无通知
+                            </view>                            
+                        </view>
+                    </view>
+                    
+                </view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+                    <!--tab2-->
+                    <view class="psge__bd_bContain page__bd-border">
+                        <view class="weui-flex page__bd_title" hover-class="bgcolor-none">
+                            <view class="weui-flex__item text-left">
+                                <image src="../../../assets/img/icon/edit.png" mode="aspectFit" />
+                                09月29日 2:00:00
+                            </view>
+                            <view class="weui-flex__item text-right item-paddingtop">
+                                >
+                            </view>
+                        </view>
+                        <view class="page__bd_title">
+                            <view class="text-left">
+                                最新投资人邀约通知
+                            </view>
+                            <view class="text-left">
+                                暂无通知
+                            </view>                            
+                        </view>
+                    </view>     
+                </view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+                    <!--tab3-->
+                    <view class="psge__bd_bContain page__bd-border">
+                        <view class="weui-flex page__bd_title" hover-class="bgcolor-none">
+                            <view class="weui-flex__item text-left">
+                                <image src="../../../assets/img/icon/edit.png" mode="aspectFit" />
+                                09月29日 2:00:00
+                            </view>
+                            <view class="weui-flex__item text-right item-paddingtop">
+                                >
+                            </view>
+                        </view>
+                        <view class="page__bd_title">
+                            <view class="text-left">
+                                最新投资人邀约通知
+                            </view>
+                            <view class="text-left">
+                                暂无通知
+                            </view>                            
+                        </view>
+                    </view>
+                </view>
+                
+            </view>
+        </view>
+
+
+    </view>
+
+
+</view>

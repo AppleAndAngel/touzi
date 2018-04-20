@@ -1,0 +1,132 @@
+<!--pages/financing/release/release.wxml-->
+<view class="page">
+    <view class="page__pd">
+        <view class="weui-cells weui-cells_after-title fontsize-30">
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__bd">行业分类</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">请选择</view>
+            </navigator>
+        </view>
+    </view>
+    <view class="page__bd">
+        <view class="section-contain">
+            <view class="page__bd_intro fontsize-30">
+                <block>项目概况</block>
+                <textarea maxlength="200"></textarea>
+            </view>
+        </view>
+        <view class="section-contain">
+            <view class="page__bd_intro fontsize-30 weui-flex text-center contain_title">
+                <view class="weui-flex__item">年份</view>
+                <view class="weui-flex__item">银行收入</view>
+                <view class="weui-flex__item">净利润</view>
+            </view>
+            <view class="page__bd_intro fontsize-30 weui-flex text-center">
+                <view class="weui-flex__item">
+                    <input type="text" class="input-border" />
+                </view>
+                <view class="weui-flex__item">
+                    <input type="text" class="input-border" />
+                    <text class="text-style">万元</text>
+                </view>
+                <view class="weui-flex__item">
+                    <input type="text" class="input-border" />
+                    <text class="text-style">万元</text>
+                </view>
+            </view>
+            <view class="page__bd_intro fontsize-30 weui-flex text-center">
+                <view class="weui-flex__item">
+                    <input type="text" class="input-border" />
+                </view>
+                <view class="weui-flex__item">
+                    <input type="text" class="input-border" />
+                    <text class="text-style">万元</text>
+                </view>
+                <view class="weui-flex__item">
+                    <input type="text" class="input-border" />
+                    <text class="text-style">万元</text>
+                </view>
+            </view>
+        </view>
+        <view class="section-contain">
+            <view class="page__bd_intro fontsize-30 weui-flex text-left">
+                <view class="weui-flex__item">*资本规划</view>
+            </view>
+        </view>
+        <view class="section-contain">
+            <view class="page__bd_intro fontsize-30 weui-flex text-left">
+                <view class="weui-flex__item">*融资类型</view>
+                <view class="weui-flex__item text-left">
+                    <view class="type-border"></view>
+                </view>
+            </view>
+        </view>
+
+        <view class="section-contain">
+            <view class="page__bd_intro fontsize-30 weui-flex text-left">
+                <view class="weui-flex__item">*期望时</view>
+                <view class="weui-flex__item text-left">
+                    <view class="type-border"></view>
+                </view>
+            </view>
+        </view>
+        <view class="section-contain">
+            <view class="page__bd_intro fontsize-30 weui-flex text-left">
+                <view class="weui-flex__item">*融资金额</view>
+                <view class="weui-flex__item">
+                    <input type="text" class="input-border input-width" />
+                    <text class="text-style">万元</text>
+                </view>
+            </view>
+        </view>
+        <view class="section-contain">
+            <view class="page__bd_intro fontsize-30 weui-flex text-left">
+                <view class="weui-flex__item">指定机构</view>
+                <view class="weui-flex__item text-left">
+                    <view class="type-border"></view>
+                </view>
+            </view>
+        </view>
+        <view class="section-contain">
+            <view class="page__bd_intro fontsize-30 weui-flex text-left">
+                <view class="weui-flex__item">是否并购</view>
+                <view class="weui-flex__item text-right">
+                    <radio-group class="radio-group" bindchange="radioChange">
+                        <radio class="radio" value="并购" checked="{{true}}">
+                            <text>并购</text>
+                        </radio>
+                        <radio class="radio" value="被并购" checked="{{false}}">
+                            <text>被并购</text>
+                        </radio>
+                     </radio-group>   
+                </view>
+            </view>
+        </view>
+        <view class="section-contain">
+            <view class="page__bd_intro fontsize-30 weui-flex text-left">
+                <view class="weui-flex__item">商业企划书</view>
+                <view class="weui-flex__item text-right">
+                    <view class="blue-underline">点击查看模板</view>
+                </view>
+            </view>
+        </view>
+        <view class="section-contain">
+            <view class="page__bd_intro fontsize-30 text-left">
+                <view>其他需求</view>
+                <view class="text-left">
+                    <view class="blue-underline">点击查看模板</view>
+                </view>
+            </view>
+        </view>
+        <view class="section-contain">
+            <view class="page__bd_intro fontsize-30 weui-flex text-left">
+                <view class="weui-flex__item text-left">
+                    <button class="button btn_width" type="primary">保存</button>
+                </view>
+                <view class="weui-flex__item text-right">
+                    <button class="button btn_width" type="primary" plain="true">提交</button>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,103 @@
+<!--pages/center/consumption/consumption.wxml-->
+<view class="page">
+    <view class="page__bd">
+        <view class="psge__bd_bContain page__bd-border">
+            <view class="weui-flex page__bd_title" hover-class="bgcolor-none">
+                <view class="text-left">
+                    *公司全称：
+                </view>
+                <view class="weui-flex__item text-left">
+                    <input type="text" placeholder="请输入公司全称" />
+                </view>
+                <view class="text-right item-paddingtop">
+                    <text class="icon-why">x</text>
+                </view>
+            </view>
+            <view class="weui-flex page__bd_title" hover-class="bgcolor-none">
+                <view class="text-left">
+                    公司简称：
+                </view>
+                <view class="weui-flex__item text-left">
+                    <input type="text" placeholder="请输入公司简称" />
+                </view>
+                <view class="text-right item-paddingtop">
+                    <text class="icon-why">x</text>
+                </view>
+            </view>
+            <view class="weui-flex page__bd_title" hover-class="bgcolor-none">
+                <view class="text-left">
+                    公司官网：
+                </view>
+                <view class="weui-flex__item text-left">
+                    <input type="text" placeholder="请输入公司官网" />
+                </view>
+                <view class="text-right item-paddingtop">
+                    <text class="icon-why">x</text>
+                </view>
+            </view>
+        </view>
+        <view class="psge__bd_bContain page__bd-border">
+            <view class="weui-flex page__bd_title" hover-class="bgcolor-none">
+                <view class="text-left">
+                    成立时间：
+                </view>
+                <picker class="weui-flex__item text-left" mode="date" bindchange="changeDate">
+                    <text>{{date}}</text>
+                </picker>
+                <view class="text-right item-paddingtop">
+                    >
+                </view>
+            </view>
+            <view class="weui-flex page__bd_title" hover-class="bgcolor-none">
+                <view class="text-left">
+                    *公司地址：
+                </view>
+                <view class="weui-flex__item text-left">
+                    <input type="text" placeholder="请输入公司简称" />
+                </view>
+                <view class="text-right item-paddingtop">
+                    >
+                </view>
+            </view>
+            <view class="weui-flex page__bd_title" hover-class="bgcolor-none">
+                <view class="text-left">
+                    *所属行业：
+                </view>
+                <view class="weui-flex__item text-left">
+                    <input type="text" placeholder="请输入公司官网" />
+                </view>
+                <view class="text-right item-paddingtop">
+                    >
+                </view>
+            </view>
+        </view>
+        <view class="psge__bd_bContain page__bd-border">
+            <view class="weui-flex page__bd_title" hover-class="bgcolor-none">
+                <view class="text-left">
+                    *所属行业：
+                </view>
+                <view class="weui-flex__item text-left">
+                    <input type="text" placeholder="请输入公司官网" />
+                </view>
+                <view class="text-right item-paddingtop">
+                    >
+                </view>
+            </view>
+            <view class="weui-flex page__bd_title" hover-class="bgcolor-none">
+                <view class="text-left">
+                    所属行业：
+                </view>
+                <view class="weui-flex__item text-left">
+                    <input type="text" placeholder="请输入公司官网" />
+                </view>
+                <view class="text-right item-paddingtop">
+                    >
+                </view>
+            </view>
+        </view>
+
+        <view>
+            <button class="button btn-bgcolor">保存</button>
+        </view>
+    </view>
+</view>

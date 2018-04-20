@@ -1,0 +1,58 @@
+/* pages/financing/release/release.wxss */
+.page{
+    background:#eeeeee;
+    padding-top:20rpx;
+}
+.page__pd{
+    margin-bottom:20rpx;
+}
+.page__bd{
+    /*background:#ffffff;*/
+}
+.section-contain{
+    padding:30rpx;
+    margin-bottom:20rpx;
+    background:#ffffff;
+
+}
+.page__bd_intro textarea{
+    width:640rpx;
+    border:1rpx solid #e1e1e1;
+    border-radius:10rpx;
+    margin-top:10rpx;
+    padding:20rpx;
+}
+.input-border{
+    width:60%;
+    border:1rpx solid #e1e1e1;
+    display:inline-block;
+    border-radius:10rpx;
+}
+.text-style{
+    display:inline-block;
+    position:relative;
+    font-size:26rpx;
+    margin-left:10rpx;
+    transform:translateY(-15rpx);
+}
+.contain_title{
+    border-bottom:1rpx solid #e1e1e1;
+    padding-bottom:20rpx;
+    margin-bottom:30rpx;
+}
+.type-border{
+    height:40rpx;
+    border:1rpx solid #e1e1e1;
+    border-radius:10rpx;
+    padding:10rpx;
+}
+.input-width{
+    width:80%;
+}
+.blue-underline{
+    text-decoration: underline;
+    color:#991e30;
+}
+.btn_width{
+    width:80%;
+}

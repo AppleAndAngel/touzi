@@ -1,0 +1,113 @@
+<!--pages/attention/attention.wxml-->
+<!--viewages/investment/investment.wxml-->
+<!--<text>viewages/investment/investment.wxml</text>-->
+<view class="page">
+    <!--<view class="page__pd">
+        <image src="../../assets/img/material/banner.jpg" />        
+    </view>-->
+    
+    <view class="page__bd">                
+        <view class="weui-tab">
+            <view class="weui-navbar">
+                <block wx:for="{{tabs}}" wx:key="*this">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                        <view class="weui-navbar__title">{{item}}</view>
+                    </view>
+                </block>
+                <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+            </view>
+            <view class="weui-tab__panel">
+                <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+                    <!--tab1-->
+                    <view class="weui-flex page__bd_col" wx:for="{{investors}}" data-data="{{item}}" hidden="{{item.attention === 0}}" wx:key="{{index}}" data-item="people" >
+                        <view><view class="placeholder page__bd_image"><image class="img-headportrait" src="{{item.headSrc}}" /></view></view>
+                        <view class="weui-flex__item">
+                            <view class="placeholder text-left">
+                                <view><text class="page__bd_name text-bold">{{item.name}}</text><text class="page__bd_title">{{item.title}}</text></view>
+                                <view class="page__bd_des">{{item.des}}</view>
+                                <view class="line-height30"><text class="page__bd_label">{{item.label}}</text><text class="page__bd-label-child">{{item.labelC}}</text></view>
+                            </view>
+                        </view>
+                        <view>
+                            <view class="placeholder text-right text-28 page__bd_info" data-index="{{index}}" data-status="{{item.attention}}" bindtap="showAttModal">
+                                <view wx:if="{{item.attention === 2}}"><text class="info_attention text-30 text-bold color-d73404">互相关注</text></view>
+                                <view wx:if="{{item.attention === 1}}"><text class="info_attention text-30 text-bold">关注</text></view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+                    <!--tab2-->
+                    <view class="weui-flex page__bd_col" wx:for="{{fans}}" data-data="{{item}}" wx:key="{{index}}" data-item="people" >
+                        <view><view class="placeholder page__bd_image"><image class="img-headportrait" src="{{item.headSrc}}" /></view></view>
+                        <view class="weui-flex__item">
+                            <view class="placeholder text-left">
+                                <view><text class="page__bd_name text-bold">{{item.name}}</text><text class="page__bd_title">{{item.title}}</text></view>
+                                <view class="page__bd_des">{{item.des}}</view>
+                                <view class="line-height30"><text class="page__bd_label">{{item.label}}</text><text class="page__bd-label-child">{{item.labelC}}</text></view>
+                            </view>
+                        </view>
+                        <view>
+                            <view class="placeholder text-right text-28 page__bd_info" data-index="{{index}}" data-status="{{item.attention}}" bindtap="showAttModal">
+                                <view wx:if="{{item.attention === 2}}"><text class="info_attention text-30 text-bold color-d73404">互相关注</text></view>
+                                <view wx:if="{{item.attention === 1}}"><text class="info_attention text-30 text-bold">关注</text></view>
+                                <view wx:if="{{item.attention === 0}}"><text class="info_attention text-30 text-bold">未关注</text></view>
+                            </view>
+                        </view>
+                    </view>               
+                </view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 2}}">
+                    <!--tab3-->
+                    <view class="weui-flex fontsize-30">
+                        <view class="weui-flex__item" wx:for="{{DateStatus}}" wx:key="{{index}}"><view class="{{dateActiveIndex == index ?'placeholder datetab-active':'placeholder'}}" data-index="{{index}}" bindtap="changDateStatus">{{item}}</view></view>
+                    </view>                    
+                    <view class="weui-flex page__bd_col" wx:for="{{investors}}" data-data="{{item}}" hidden="{{item.attention === 0}}" wx:key="{{index}}" data-item="people" >
+                        <view><view class="placeholder page__bd_image"><image class="img-headportrait" src="{{item.headSrc}}" /></view></view>
+                        <view class="weui-flex__item">
+                            <view class="placeholder text-left">
+                                <view><text class="page__bd_name text-bold">{{item.name}}</text><text class="page__bd_title">{{item.title}}</text></view>
+                                <view class="page__bd_des width-300">{{item.des}}</view>
+                                <view class="line-height30"><text class="page__bd_label">{{item.label}}</text><text class="page__bd-label-child">{{item.labelC}}</text></view>
+                            </view>
+                        </view>
+                        <view>
+                            <view class="placeholder text-right text-28 page__bd_info" data-index="{{index}}" bindtap="turnToEvalution">
+                                <view><text class="info_attention text-30 text-bold">评价</text></view>
+                            </view>
+                        </view>
+                        <view>
+                            <view class="placeholder text-right text-28 page__bd_info" data-index="{{index}}" bindtap="turnToDetail">
+                                <view><text class="info_attention text-30 text-bold color-d73404">查看详情</text></view>
+                                <view><text class="info_label text-30 text-bold color-d73404">约会中</text></view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="weui-tab__content" hidden="{{activeIndex != 3}}">
+                    <!--tab4-->
+                    
+                    <view class="weui-flex page__bd_col" wx:for="{{investors}}" data-data="{{item}}" hidden="{{item.attention === 0}}" wx:key="{{index}}" data-item="people" >
+                        <view><view class="placeholder page__bd_image"><image class="img-headportrait" src="{{item.headSrc}}" /></view></view>
+                        <view class="weui-flex__item">
+                            <view class="placeholder text-left">
+                                <view><text class="page__bd_name text-bold">{{item.name}}</text><text class="page__bd_title">{{item.title}}</text><text class="page__bd_title-lab">已接收</text></view>
+                                <view class="page__bd_des width-300">{{item.des}}</view>
+                                <view class="line-height30"><text class="page__bd_label">{{item.label}}</text><text class="page__bd-label-child">{{item.labelC}}</text></view>
+                            </view>
+                        </view>                        
+                        <view>
+                            <view class="placeholder text-right text-28 page__bd_info" data-index="{{index}}" bindtap="turnToDetail">
+                                <view><text class="info_attention text-30 text-bold color-d73404">查看详情</text></view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+
+            </view>
+        </view>
+
+
+    </view>
+
+
+</view>

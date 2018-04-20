@@ -1,0 +1,44 @@
+<!--pages/center/consumption/consumption.wxml-->
+<view class="page">
+    <view class="page__bd">
+        <view class="psge__bd_bContain page__bd-border">
+            <view class="weui-flex page__bd_title" hover-class="bgcolor-none">
+                <view class="text-left">
+                    旧密码：
+                </view>
+                <view class="weui-flex__item text-left">
+                    <input type="text" placeholder="请输入旧密码" />
+                </view>
+                <view class="text-right item-paddingtop">
+                    <text class="icon-why">x</text>
+                </view>
+            </view>
+            <view class="weui-flex page__bd_title" hover-class="bgcolor-none">
+                <view class="text-left">
+                    新密码：
+                </view>
+                <view class="weui-flex__item text-left">
+                    <input type="text" placeholder="请输入新密码" />
+                </view>
+                <view class="text-right item-paddingtop">
+                    <text class="icon-why">x</text>
+                </view>
+            </view>
+            <view class="weui-flex page__bd_title" hover-class="bgcolor-none">
+                <view class="text-left">
+                    确定密码：
+                </view>
+                <view class="weui-flex__item text-left">
+                    <input type="text" placeholder="请再次输入新密码" />
+                </view>
+                <view class="text-right item-paddingtop">
+                    <text class="icon-why">x</text>
+                </view>
+            </view>
+        </view>
+
+        <view>
+            <button class="button btn-bgcolor">确定修改</button>
+        </view>
+    </view>
+</view>

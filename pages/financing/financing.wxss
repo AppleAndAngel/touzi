@@ -1,0 +1,69 @@
+/* pages/financing/financing.wxss */
+
+.page{
+    background:#e7e7e7;
+    padding-top:5rpx;
+}
+.page__pd{
+    padding:20rpx;
+    background:#ffffff;
+    margin:20rpx 0;
+}
+.page__pd_contain{
+    margin-top:20rpx;
+    padding:20rpx;
+    border:1rpx solid #e1e1e1;
+    border-radius:10rpx;
+    box-shadow: 1rpx 1rpx 10rpx #959595;
+}
+.page__pd_icon{
+    border-right:1rpx solid #e1e1e1;
+    padding-right:10rpx;
+}
+.page__pd_icon image{
+    width:60rpx;
+    height:60rpx;
+    margin-top:42rpx;
+}
+.page_pd-padding{
+    padding:0 40rpx;
+}
+
+.page__bd{
+    padding:20rpx;
+    background:#ffffff;
+}
+.page__bd_btn{
+    display:inline-block;
+    width:280rpx;
+    margin-right:none;
+    margin-bottom:10rpx;
+    border:1rpx solid #b70000!important;
+}
+.button-hover{
+    background:#f5f5f5!important;
+}
+.page__bd_btn image{
+    width:40rpx;
+    height:40rpx;
+    position:relative;
+    top:6rpx;
+    right:10rpx;
+}
+.page__bd-border{
+    border-radius:10rpx;
+    box-shadow: 1rpx 1rpx 10rpx #959595;
+}
+.psge__bd_bContain image{
+    width:30rpx;
+    height:30rpx;
+}
+.page__bd_title{
+    font-size:28rpx;
+    padding:20rpx;
+}
+.page__bd_content{
+    font-size:28rpx;
+    padding:20rpx;
+    border-top:1rpx solid #e1e1e1;
+}

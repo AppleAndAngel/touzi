@@ -1,0 +1,24 @@
+<!--pages/center/consumption/consumption.wxml-->
+<view class="page">
+    <view class="page__bd">
+            <view class="psge__bd_bContain page__bd-border">
+            <navigator url="perfect/perfect" class="weui-flex page__bd_title" hover-class="bgcolor-none">
+                <view class="weui-flex__item text-left">
+                    <image src="../../../assets/img/icon/edit.png" mode="aspectFit" />
+                    2018.01.01 12:21:00
+                </view>
+                <view class="weui-flex__item text-right item-paddingtop">
+                    支付成功
+                </view>
+            </navigator>
+            <view class="weui-flex page__bd_title">
+                <view class="weui-flex__item text-left">
+                    发起约会
+                </view>
+                <view class="weui-flex__item text-right item-paddingtop">
+                    ￥122.00元
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

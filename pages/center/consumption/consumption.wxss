@@ -1,0 +1,44 @@
+/* pages/center/consumption/consumption.wxss */
+.page__bd{
+    padding:20rpx;
+        /*background:#e4e4e4;*/
+
+}
+.page__bd-border{
+    border-radius:10rpx;
+    box-shadow: 1rpx 1rpx 10rpx #959595;
+}
+.psge__bd_bContain image{
+    width:40rpx;
+    height:40rpx;
+    position:relative;
+    transform:translateY(8rpx);
+}
+.page__bd_title{
+    font-size:28rpx;
+    padding:20rpx;
+    border-top:1rpx solid #e1e1e1;
+    margin-bottom:20rpx;
+}
+.page__bd_content{
+    font-size:28rpx;
+    padding:20rpx;
+    border-top:1rpx solid #e1e1e1;
+}
+.icon-why{
+    display:inline-block;
+    width:40rpx;
+    height:40rpx;
+    text-align:center;
+    color:#ffffff;
+    background:#c3c3c3;
+    border-radius:100%;
+    margin-left:10rpx;
+}
+.item-paddingtop{
+    padding-top:8rpx;
+    color:#b9b9b9;
+}
+.bgcolor-none{
+    background:none;
+}

@@ -1,0 +1,80 @@
+/* pages/investment/investment.wxss */
+swiper{
+    height:calc(100vh - 500rpx);
+    overflow: auto;
+}
+swiper-item{
+    overflow:auto!important;
+}
+.page__pd image{
+    /*display:block;*/
+    width:750rpx;
+    height:300rpx;
+}
+.searchbar-result{
+    margin-top: 0;
+    font-size: 14px;
+}
+.searchbar-result:before{
+
+    
+    display: none;
+}
+.weui-cell{
+    padding: 12px 15px 12px 35px;
+}
+.placeholder{
+    margin: 5px;
+    text-align: center;
+    color: #cfcfcf;
+}
+.tab-padding{
+    padding:10rpx 30rpx 1rpx;
+}
+.page__bd_tab{
+    padding:5rpx 0;
+    color:#123c81;
+    font-weight:bold;
+    border-bottom:4rpx solid #123c81;
+}
+.img-headportrait{
+    width:120rpx;
+    height:120rpx;
+    border-radius: 50%;
+    vertical-align:middle;
+    border:4rpx solid #d73404;
+}
+.page__bd_col{
+    padding:30rpx 0;
+    border-top:1rpx solid #b0b0b0;
+}
+.page__bd_image{
+    padding:10rpx 0;
+}
+.page__bd_name{
+    font-size:36rpx;
+    color:#d73404;
+    margin-right:30rpx;
+}
+.page__bd_title{
+    font-size:30rpx;
+    color:#202020;
+}
+.page__bd_des{
+    width:400rpx;
+    font-size:30rpx;
+    color:#737373;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.page__bd_label{
+    font-size:28rpx;
+    margin-right:20rpx;
+}
+.page__bd-label-child{
+    font-size:24rpx;
+}
+.page__bd_info{
+    padding:30rpx 0;
+}

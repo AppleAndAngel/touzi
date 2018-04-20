@@ -1,0 +1,49 @@
+<!--pages/financing/financing.wxml-->
+<!--<text>pages/financing/financing.wxml</text>-->
+<view class="page">
+    <view class="page__pd">
+        <view class="fontsize-30">
+            融资历史信息
+        </view>
+        <view class="weui-flex page__bd_col page__pd_contain fontsize-30">
+            <view class="page__pd_icon">
+                <image src="../../assets/img/icon/A.png" mode="aspectFit" />
+            </view>
+            <view class="text-right page_pd-padding">
+                <view>2017.12</view>
+                <view>A轮</view>
+            </view>
+            <view class="text-left">
+                <view>金额</view>
+                <view>估值</view>
+                <view>创新</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="page__bd fontsize-30">
+        <view class="weui-flex">
+            <view class="weui-flex__item text-left">融资需求</view>
+            <navigator url="release/release">
+                <view class="weui-flex__item text-right">
+                    <button class="weui-btn fontsize-30 page__bd_btn" type="default" plain="true"><image src="../../assets/img/icon/edit.png" mode="aspectFit" />发布融资需求</button>
+                </view>
+            </navigator>            
+        </view>
+        <view class="psge__bd_bContain page__bd-border">
+            <view class="weui-flex page__bd_title">
+                <view class="weui-flex__item text-left">
+                    <image src="../../assets/img/icon/date.png" mode="aspectFit" />
+                    2017-01-10
+                </view>
+                <view class="weui-flex__item text-right">
+                    <image src="../../assets/img/icon/eye.png" mode="aspectFit" />
+                    展示
+                </view>
+            </view>
+            <view class="page__bd_content">行业分类：移动互联网</view>
+        </view>
+
+
+    </view>
+</view>

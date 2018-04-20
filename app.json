@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/center/center",
+    "pages/center/perfect/perfect",
+    "pages/center/perfect/basemessage/basemessage",
+    "pages/center/perfect/intro/intro",
+    "pages/center/message/message",
+    "pages/center/consumption/consumption",
+    "pages/center/set/set",
+    "pages/center/set/setpw/setpw",
+    "pages/financing/financing",        
+    "pages/financing/release/release",
+    "pages/investment/investment",
+    "pages/investment/people/people",
+    "pages/investment/institution/institution",
+    "pages/attention/attention",
+    "pages/attention/evalution/evalution",
+    "pages/attention/detail/detail",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color":"#333333",
+    "selectedColor": "#d73404",
+    "backgroundColor": "#ffffff",
+    "list":[{
+      "pagePath": "pages/center/center",
+      "iconPath": "assets/img/icon/center.png",
+      "selectedIconPath": "assets/img/icon/center_selected.png",
+      "text":"中心"
+    },{
+      "pagePath": "pages/investment/investment",
+      "iconPath": "assets/img/icon/index.png",
+      "selectedIconPath": "assets/img/icon/index_selected.png",
+      "text":"投资"
+    },{
+      "pagePath":"pages/attention/attention",
+      "iconPath": "assets/img/icon/attention.png",
+      "selectedIconPath": "assets/img/icon/attention_selected.png",
+      "text":"关注"
+    },{
+      "pagePath": "pages/financing/financing",
+      "iconPath": "assets/img/icon/financing.png",
+      "selectedIconPath": "assets/img/icon/financing_selected.png",
+      "text":"融资"
+    }]
+  }
+}
